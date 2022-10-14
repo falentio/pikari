@@ -1,0 +1,29 @@
+{
+  "tasks": {
+    "start": "deno run -A --watch=static/,routes/ dev.ts"
+  },
+  "fmt": {
+    "files": {
+      "include": ["src", "cmd", "routes", "islands", "components"]
+    },
+    "options": {
+      "useTabs": true,
+      "indentWidth": 4,
+      "singleQuote": false,
+      "lineWidth": 100
+    }
+  },
+  "lint": {
+    "files": {
+      "include": ["src", "cmd", "routes", "islands", "components"]
+    },
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "importMap": "./import_map.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
+}
